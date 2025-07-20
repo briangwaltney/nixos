@@ -121,6 +121,7 @@
     nodejs
     ripgrep
     wl-clipboard
+    zig
   ];
 
   services.openssh.enable = true;
