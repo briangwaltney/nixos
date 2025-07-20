@@ -121,6 +121,8 @@
     nodejs
     ripgrep
     wl-clipboard
+
+    alejandra
   ];
 
   services.openssh.enable = true;
