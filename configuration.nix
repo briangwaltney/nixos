@@ -119,6 +119,7 @@
     go
     opam
     nodejs
+    ripgrep
   ];
 
   services.openssh.enable = true;
