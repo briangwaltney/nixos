@@ -115,6 +115,7 @@
     home-manager
 
     unzip
+    cargo
     go
     opam
     nodejs
