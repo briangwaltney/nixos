@@ -124,5 +124,20 @@
 
   services.openssh.enable = true;
 
+  # system.autoUpgrade = {
+  #   enable = true;
+  #   flake = inputs.self.outpath;
+  #   flags = [
+  #     "--update-input"
+  #     "nixpkgs"
+  #     "-L"
+  #
+  #   ];
+  #   dates = "09:00";
+  #   randomizedDeylaySec = "45min";
+  #
+  # };
+
   system.stateVersion = "25.05"; # Did you read the comment?
+
 }
