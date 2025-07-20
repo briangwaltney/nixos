@@ -122,6 +122,7 @@
     ripgrep
     wl-clipboard
     zig
+    gcc
   ];
 
   services.openssh.enable = true;
