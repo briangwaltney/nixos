@@ -119,8 +119,6 @@
     go
     opam
     nodejs
-
-    kitty
   ];
 
   services.openssh.enable = true;
