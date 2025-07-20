@@ -120,6 +120,7 @@
     opam
     nodejs
     ripgrep
+    wl-clipboard
   ];
 
   services.openssh.enable = true;
