@@ -28,7 +28,10 @@
 
     homeConfigurations.brian = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
-      modules = [./home.nix];
+      modules = [
+        ./home.nix
+        ./shell-config.nix
+      ];
     };
   };
 }
