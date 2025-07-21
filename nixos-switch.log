@@ -1,41 +1,36 @@
 warning: Git tree '/home/brian/.config/nixos' is dirty
-error:
-       … while calling the 'seq' builtin
-         at /nix/store/182c2qj20sfspzxcshd6p051qdx3mx5j-source/lib/modules.nix:360:18:
-          359|         options = checked options;
-          360|         config = checked (removeAttrs config [ "_module" ]);
-             |                  ^
-          361|         _module = checked (config._module);
-
-       … while evaluating a branch condition
-         at /nix/store/182c2qj20sfspzxcshd6p051qdx3mx5j-source/lib/modules.nix:296:9:
-          295|       checkUnmatched =
-          296|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [ ] then
-             |         ^
-          297|           let
-
-       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
-
-       error: path '/nix/store/gyjkyrcy56k9lwkq8zz6cn6810a41viy-source/configuration.nix' does not exist
-warning: could not build a newer version of nixos-rebuild, using current version
 building the system configuration...
 warning: Git tree '/home/brian/.config/nixos' is dirty
-error:
-       … while calling the 'seq' builtin
-         at /nix/store/182c2qj20sfspzxcshd6p051qdx3mx5j-source/lib/modules.nix:360:18:
-          359|         options = checked options;
-          360|         config = checked (removeAttrs config [ "_module" ]);
-             |                  ^
-          361|         _module = checked (config._module);
-
-       … while evaluating a branch condition
-         at /nix/store/182c2qj20sfspzxcshd6p051qdx3mx5j-source/lib/modules.nix:296:9:
-          295|       checkUnmatched =
-          296|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [ ] then
-             |         ^
-          297|           let
-
-       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
-
-       error: path '/nix/store/bdr9lwsbnhd29pm0m45qplkxxmiv7xyw-source/configuration.nix' does not exist
-Command 'nix --extra-experimental-features 'nix-command flakes' build --print-out-paths '/home/brian/.config/nixos#nixosConfigurations."nixos".config.system.build.toplevel' --no-link' returned non-zero exit status 1.
+these 11 derivations will be built:
+  /nix/store/dry99j3kgvkd852i4p9m0carh6jdydfk-system-path.drv
+  /nix/store/r0p78cv23d9ykr2yw8hhgbwkqxzszglq-dbus-1.drv
+  /nix/store/2sghjxbrfixqq67m7qx2wlf07418qbsd-X-Restart-Triggers-dbus.drv
+  /nix/store/pmqajfnvhq9661f1k50pck31xhd3zipc-unit-dbus.service.drv
+  /nix/store/mahvh90635nbsmfgvpcqvx4f53p7wza3-X-Restart-Triggers-polkit.drv
+  /nix/store/yk7fgrqdrk0m8gb3g5hibim00b4d73iy-unit-polkit.service.drv
+  /nix/store/jdwcvqxpqm2dq9ih9a2dh3k9185l60gb-system-units.drv
+  /nix/store/fxcgjpci80akkm438bhc6js7dv7hf85s-unit-dbus.service.drv
+  /nix/store/kcpdmzb7fgdcjrnv7295r5gbdh42g87x-user-units.drv
+  /nix/store/9s2xq3pxq53g6bxcbvk038fzhr56rywl-etc.drv
+  /nix/store/r8111al1bycgcr8wvn4y14n0c7ksfrf6-nixos-system-nixos-25.11.20250719.c87b95e.drv
+this path will be fetched (0.02 MiB download, 0.02 MiB unpacked):
+  /nix/store/yxjhpwqg11d4dx6hg07cw9i7zycy98v3-fzf-0.64.0-man
+copying path '/nix/store/yxjhpwqg11d4dx6hg07cw9i7zycy98v3-fzf-0.64.0-man' from 'https://cache.nixos.org'...
+building '/nix/store/dry99j3kgvkd852i4p9m0carh6jdydfk-system-path.drv'...
+building '/nix/store/mahvh90635nbsmfgvpcqvx4f53p7wza3-X-Restart-Triggers-polkit.drv'...
+building '/nix/store/r0p78cv23d9ykr2yw8hhgbwkqxzszglq-dbus-1.drv'...
+building '/nix/store/yk7fgrqdrk0m8gb3g5hibim00b4d73iy-unit-polkit.service.drv'...
+building '/nix/store/2sghjxbrfixqq67m7qx2wlf07418qbsd-X-Restart-Triggers-dbus.drv'...
+building '/nix/store/fxcgjpci80akkm438bhc6js7dv7hf85s-unit-dbus.service.drv'...
+building '/nix/store/pmqajfnvhq9661f1k50pck31xhd3zipc-unit-dbus.service.drv'...
+building '/nix/store/kcpdmzb7fgdcjrnv7295r5gbdh42g87x-user-units.drv'...
+building '/nix/store/jdwcvqxpqm2dq9ih9a2dh3k9185l60gb-system-units.drv'...
+building '/nix/store/9s2xq3pxq53g6bxcbvk038fzhr56rywl-etc.drv'...
+building '/nix/store/r8111al1bycgcr8wvn4y14n0c7ksfrf6-nixos-system-nixos-25.11.20250719.c87b95e.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for brian...
+restarting sysinit-reactivation.target
+reloading the following units: dbus.service
+the following new units were started: NetworkManager-dispatcher.service
+Done. The new configuration is /nix/store/38z8fcgki5y5dvrlrs216cdvpfcfclpi-nixos-system-nixos-25.11.20250719.c87b95e
