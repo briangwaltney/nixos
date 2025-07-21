@@ -84,7 +84,6 @@
     isNormalUser = true;
     description = "Brian Gwaltney";
     extraGroups = ["networkmanager" "wheel"];
-    shell = pkgs.zsh;
     packages = with pkgs; [];
   };
 

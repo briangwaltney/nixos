@@ -14,6 +14,8 @@
 
     file = {};
 
+    shell = pkgs.zsh;
+
     sessionVariables = {
       EDITOR = "neovim";
     };
