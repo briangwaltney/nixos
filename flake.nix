@@ -11,24 +11,19 @@
   };
 
   outputs = {
-    self,
     nixpkgs,
     home-manager,
     ...
-  } @ inputs: let
+  }: let
+    lib = nixpkgs.lib;
     system = "x86_64-linux";
+    pkgs = import nixpkgs {inherit system;};
   in {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      inherit system;
-      specialArgs = {inherit inputs;};
-      modules = [
-        ./configuration.nix
-      ];
-    };
-
-    homeConfigurations."brian" = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
-      modules = [./home.nix];
+    homeConfigurations = {
+      brian = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        modules = [./home.nix];
+      };
     };
   };
 }
