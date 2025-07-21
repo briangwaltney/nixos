@@ -1,31 +1,8 @@
 {
-  programs.zsh = {
-    enable = true;
-    enableCompletion = true;
-    autosuggestions.enable = true;
-
-    shellAliases = let
-      flakePath = "~/.config/nixos";
-    in {
-      air = "~/go/bin/air -c .air.toml";
-      rebuild = "~/.config/rebuild.sh";
-      hms = "home-manager switch --flake ${flakePath}";
-      v = "neovim";
-    };
-
-    shellInit = ''
-      set -o emacs
-      export EDITOR="nvim"
-      export VISUAL="nvim"
-      eval "$(starship init zsh)"
-      eval "$(zoxide init zsh)"
-    '';
-  };
-
   programs.starship = {
     enable = true;
     settings = {
-      format = "$all$nix_shell$nodejs$lua$golang$rust$php$git_branch$git_commit$git_state$git_status\n$username$hostname$directory";
+      format = "";
       directory = {
         format = "[$path ](#8FBCBB)";
         truncation_length = 12;
@@ -52,5 +29,29 @@
       };
     };
   };
+
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestions.enable = true;
+
+    shellAliases = let
+      flakePath = "~/.config/nixos";
+    in {
+      air = "~/go/bin/air -c .air.toml";
+      rebuild = "~/.config/rebuild.sh";
+      hms = "home-manager switch --flake ${flakePath}";
+      v = "nvim";
+    };
+
+    shellInit = ''
+      set -o emacs
+      export EDITOR="nvim"
+      export VISUAL="nvim"
+      eval "$(starship init zsh)"
+      eval "$(zoxide init zsh)"
+    '';
+  };
+
   programs.zoxide.enable = true;
 }
