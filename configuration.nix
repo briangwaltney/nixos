@@ -5,8 +5,6 @@
   ...
 }: {
   imports = [
-    # Include the results of the hardware scan.
-    # ./hardware-configuration.nix
   ];
   nixpkgs.config.allowUnfree = true;
 
@@ -47,6 +45,7 @@
   ];
 
   programs.hyprland.enable = true;
+  # programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
 
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
