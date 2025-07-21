@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
   imports = [
@@ -45,10 +46,7 @@
     }
   ];
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+  programs.hyprland.enable = true;
 
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
@@ -134,11 +132,8 @@
   #     "--update-input"
   #     "nixpkgs"
   #     "-L"
-  #
   #   ];
   #   dates = "09:00";
-  #   randomizedDeylaySec = "45min";
-  #
   # };
 
   system.stateVersion = "25.05"; # Did you read the comment?
