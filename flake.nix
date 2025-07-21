@@ -22,7 +22,7 @@
       inherit system;
       specialArgs = {inherit inputs;};
       modules = [
-        ./newconfig.nix
+        ./configuration.nix
       ];
     };
 

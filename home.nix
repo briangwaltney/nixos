@@ -9,7 +9,7 @@
   home.stateVersion = "24.11";
 
   home.packages = [
-    pkgs.nerdfonts
+    # pkgs.nerdfonts
   ];
 
   home.file = {
