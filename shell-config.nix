@@ -40,7 +40,7 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    autosuggestions.enable = true;
+    autosuggestion.enable = true;
 
     shellAliases = let
       flakePath = "~/.config/nixos";
@@ -51,7 +51,7 @@
       v = "nvim";
     };
 
-    shellInit = ''
+    initContent = ''
       set -o emacs
       export EDITOR="nvim"
       export VISUAL="nvim"
