@@ -24,11 +24,11 @@
       modules = [
         ./newconfig.nix
       ];
+    };
 
-      homeConfigurations."brian" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-        modules = [./home.nix];
-      };
+    homeConfigurations."brian" = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.${system};
+      modules = [./home.nix];
     };
   };
 }
