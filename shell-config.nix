@@ -5,14 +5,15 @@
   ...
 }: {
   programs.zoxide.enable = true;
+  programs.zoxide.enableZshIntegration = true;
 
   programs.starship = {
     enable = true;
     settings = {
-      format = "$directory$git_status$git_branch$line_break$character";
+      format = "$username$hostname$directory$git_status$git_branch$line_break$character";
       directory = {
         format = "[$path ](#8FBCBB)";
-        truncation_length = 12;
+        truncation_length = 21;
         truncation_symbol = "../";
         substitutions = {
           Documents = "󰈙 ";
@@ -21,6 +22,12 @@
           Pictures = " ";
           Developer = "󰲋 ";
         };
+      };
+      username = {
+        format = "[$user](fg:yellow)@";
+      };
+      hostname = {
+        format = "[$hostname](fg:blue):";
       };
       git_status.format = "[[($all_status$ahead_behind)](fg:#d9f99d)](#d9f99d)";
       git_branch.format = "[[$branch ](fg:#d9f99d)](#d9f99d)";
