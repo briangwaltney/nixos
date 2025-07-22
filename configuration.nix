@@ -8,6 +8,40 @@
     ./hardware-configuration.nix
   ];
 
+  environment.systemPackages = with pkgs; [
+    networkmanagerapplet
+    wget
+    discord
+    youtube-music
+    git
+    gh
+    brave
+
+    # Notifications
+    mako
+    libnotify
+
+    waybar
+
+    swww #background images
+    rofi-wayland #login manager
+
+    ghostty
+
+    home-manager
+
+    unzip
+    cargo
+    go
+    opam
+    nodejs
+    ripgrep
+    wl-clipboard
+    zig
+    gcc
+    fzf
+  ];
+
   networking.hostName = "nixos";
 
   nixpkgs.config.allowUnfree = true;
@@ -51,6 +85,8 @@
   programs.hyprland.enable = true;
   # programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
 
+  programs.zsh.enable = true;
+
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
     NIXOS_OZONE_WL = "1";
@@ -75,11 +111,22 @@
     jack.enable = true;
   };
 
+  # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.users.brian = {
+    isNormalUser = true;
+    description = "Brian Gwaltney";
+    extraGroups = ["networkmanager" "wheel"];
+    shell = pkgs.zsh;
+    packages = with pkgs; [];
+  };
+
   programs = {
-    zsh.enable = true;
-    nvf = {
+    neovim = {
       enable = true;
       defaultEditor = true;
+    };
+    nvf = {
+      enable = true;
 
       settings.vim = {
         options = {
@@ -279,49 +326,6 @@
       };
     };
   };
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.brian = {
-    isNormalUser = true;
-    description = "Brian Gwaltney";
-    extraGroups = ["networkmanager" "wheel"];
-    shell = pkgs.zsh;
-    packages = with pkgs; [];
-  };
-
-  environment.systemPackages = with pkgs; [
-    networkmanagerapplet
-    wget
-    discord
-    youtube-music
-    git
-    gh
-    brave
-
-    # Notifications
-    mako
-    libnotify
-
-    waybar
-
-    swww #background images
-    rofi-wayland #login manager
-
-    ghostty
-
-    home-manager
-
-    unzip
-    cargo
-    go
-    opam
-    nodejs
-    ripgrep
-    wl-clipboard
-    zig
-    gcc
-    fzf
-  ];
 
   services.openssh.enable = true;
 

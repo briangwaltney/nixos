@@ -30,7 +30,6 @@
       modules = [
         nvf.nixosModules.default
         ./configuration.nix
-        ./nvim.nix
       ];
     };
 
@@ -39,6 +38,7 @@
       modules = [
         ./home.nix
         ./shell-config.nix
+        ./nvim.nix
       ];
     };
   };
