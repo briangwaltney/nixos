@@ -129,7 +129,15 @@
 
   programs.nvf = {
     enable = true;
+
     settings.vim = {
+      options = {
+        scrolloff = 16;
+        foldmethod = "marker";
+        foldlevel = 99;
+        timeoutlen = 400;
+        smartcase = true;
+      };
       lsp = {
         enable = true;
         formatOnSave = true;
@@ -152,26 +160,17 @@
         ocaml.enable = true;
         tailwind.enable = true;
       };
-      diagnostics.config = {
-        virtual_text = {
-          format = lib.generators.mkLuaInline ''
-            function(diagnostic)
-              return string.format("%s (%s)", diagnostic.message, diagnostic.source)
-            end
-          '';
-        };
-      };
       visuals = {
         nvim-web-devicons.enable = true;
       };
       statusline = {
         lualine.enable = true;
-        lualine.theme = "nord";
+        lualine.theme = "catppuccin";
       };
       theme = {
         enable = true;
-        name = "nord";
-        style = "soft";
+        name = "catppuccin";
+        style = "mocha";
       };
       autopairs.nvim-autopairs.enable = true;
       autocomplete = {
@@ -183,10 +182,17 @@
         };
       };
       tabline = {
-        nvimBufferline.enable = true;
+        nvimBufferline = {
+          enable = true;
+          mappings = {
+            closeCurrent = "<leader>x";
+            cyclePrevious = "H";
+            cycleNext = "L";
+          };
+        };
       };
       binds = {
-        hardtime-nvim.enable = true;
+        hardtime-nvim.enable = false;
       };
       telescope.enable = true;
       git = {
@@ -218,20 +224,6 @@
           action = "nzzzv";
           silent = true;
           desc = "next and center";
-        }
-        {
-          key = "H";
-          mode = ["n"];
-          action = ":BufferLineCyclePrev<CR>";
-          silent = true;
-          desc = "Prev Buffer";
-        }
-        {
-          key = "L";
-          mode = ["n"];
-          action = ":BufferLineCycleNext<CR>";
-          silent = true;
-          desc = "Next Buffer";
         }
         {
           key = "}";
@@ -316,6 +308,14 @@
           action = "za";
           silent = true;
           desc = "toggle current fold";
+        }
+        {
+          key = "F";
+          mode = ["n"];
+          action = "vim.diagnostic.open_float";
+          lua = true;
+          silent = true;
+          desc = "show diagnostics float";
         }
       ];
     };
