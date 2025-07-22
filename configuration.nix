@@ -250,6 +250,13 @@
             desc = "run macro q";
           }
           {
+            key = "<leader>fw";
+            mode = ["n"];
+            action = "<cmd>:Telescope live_grep <CR>";
+            silent = true;
+            desc = "run macro q";
+          }
+          {
             key = "Q";
             mode = ["n"];
             action = "@q";
