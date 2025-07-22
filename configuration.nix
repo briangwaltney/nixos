@@ -121,12 +121,9 @@
   };
 
   programs = {
-    neovim = {
-      enable = true;
-      defaultEditor = true;
-    };
     nvf = {
       enable = true;
+      defaultEditor = true;
 
       settings.vim = {
         options = {
