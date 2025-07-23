@@ -6,10 +6,11 @@
 }: {
   imports = [
     ./hardware-configuration.nix
-    ./nvf.nix
+    # ./nvf.nix
   ];
 
   environment.systemPackages = with pkgs; [
+    neovim
     networkmanagerapplet
     wget
     discord
