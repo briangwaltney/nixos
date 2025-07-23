@@ -43,7 +43,7 @@
       };
       statusline = {
         lualine.enable = true;
-        lualine.theme = "catppuccin";
+        lualine.theme = "nord";
       };
       theme = {
         enable = true;
