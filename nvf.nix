@@ -47,8 +47,8 @@
       };
       theme = {
         enable = true;
-        name = "base16";
-        # name = "nord";
+        # name = "base16";
+        name = "nord";
         # style = "mocha";
         base16-colors = {
           base00 = "#252a34";
