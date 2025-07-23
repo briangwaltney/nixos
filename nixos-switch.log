@@ -1,29 +1,152 @@
 warning: Git tree '/home/brian/.config/nixos' is dirty
+unpacking 'github:hyprwm/Hyprland/fdbbad04bbf2382e9a980418c976668fc062f195' into the Git cache...
+unpacking 'github:hyprwm/hyprland-qtutils/b13c7481e37856f322177010bdf75fccacd1adc8?narHash=sha256-D868K1dVEACw17elVxRgXC6hOxY%2B54wIEjURztDWLk8%3D' into the Git cache...
+warning: updating lock file '"/home/brian/.config/nixos/flake.lock"':
+• Added input 'hyprland':
+    'github:hyprwm/Hyprland/fdbbad04bbf2382e9a980418c976668fc062f195?narHash=sha256-IXwbcUXRMINAcmmOoscjcElf990YSUCsPHoab0GAJ2M%3D' (2025-07-22)
+• Added input 'hyprland/aquamarine':
+    'github:hyprwm/aquamarine/e31b575d19e7cf8a8f4398e2f9cffe27a1332506?narHash=sha256-4izhj1j7J4mE8LgljCXSIUDculqOsxxhdoC81VhqizM%3D' (2025-07-17)
+• Added input 'hyprland/aquamarine/hyprutils':
+    follows 'hyprland/hyprutils'
+• Added input 'hyprland/aquamarine/hyprwayland-scanner':
+    follows 'hyprland/hyprwayland-scanner'
+• Added input 'hyprland/aquamarine/nixpkgs':
+    follows 'hyprland/nixpkgs'
+• Added input 'hyprland/aquamarine/systems':
+    follows 'hyprland/systems'
+• Added input 'hyprland/hyprcursor':
+    'github:hyprwm/hyprcursor/45fcc10b4c282746d93ec406a740c43b48b4ef80?narHash=sha256-XR9fsI0zwLiFWfqi/pdS/VD%2BYNorKb3XIykgTg4l1nA%3D' (2025-06-05)
+• Added input 'hyprland/hyprcursor/hyprlang':
+    follows 'hyprland/hyprlang'
+• Added input 'hyprland/hyprcursor/nixpkgs':
+    follows 'hyprland/nixpkgs'
+• Added input 'hyprland/hyprcursor/systems':
+    follows 'hyprland/systems'
+• Added input 'hyprland/hyprgraphics':
+    'github:hyprwm/hyprgraphics/340494a38b5ec453dfc542c6226481f736cc8a9a?narHash=sha256-gbh1HL98Fdqu0jJIWN4OJQN7Kkth7%2BrbkFpSZLm/62A%3D' (2025-07-10)
+• Added input 'hyprland/hyprgraphics/hyprutils':
+    follows 'hyprland/hyprutils'
+• Added input 'hyprland/hyprgraphics/nixpkgs':
+    follows 'hyprland/nixpkgs'
+• Added input 'hyprland/hyprgraphics/systems':
+    follows 'hyprland/systems'
+• Added input 'hyprland/hyprland-protocols':
+    'github:hyprwm/hyprland-protocols/613878cb6f459c5e323aaafe1e6f388ac8a36330?narHash=sha256-kymV5FMnddYGI%2BUjwIw8ceDjdeg7ToDVjbHCvUlhn14%3D' (2025-06-04)
+• Added input 'hyprland/hyprland-protocols/nixpkgs':
+    follows 'hyprland/nixpkgs'
+• Added input 'hyprland/hyprland-protocols/systems':
+    follows 'hyprland/systems'
+• Added input 'hyprland/hyprland-qtutils':
+    'github:hyprwm/hyprland-qtutils/b13c7481e37856f322177010bdf75fccacd1adc8?narHash=sha256-D868K1dVEACw17elVxRgXC6hOxY%2B54wIEjURztDWLk8%3D' (2025-06-19)
+• Added input 'hyprland/hyprland-qtutils/hyprland-qt-support':
+    'github:hyprwm/hyprland-qt-support/4c8053c3c888138a30c3a6c45c2e45f5484f2074?narHash=sha256-DO7z5CeT/ddSGDEnK9mAXm1qlGL47L3VAHLlLXoCjhE%3D' (2025-06-05)
+• Added input 'hyprland/hyprland-qtutils/hyprland-qt-support/hyprlang':
+    follows 'hyprland/hyprland-qtutils/hyprlang'
+• Added input 'hyprland/hyprland-qtutils/hyprland-qt-support/nixpkgs':
+    follows 'hyprland/hyprland-qtutils/nixpkgs'
+• Added input 'hyprland/hyprland-qtutils/hyprland-qt-support/systems':
+    follows 'hyprland/hyprland-qtutils/systems'
+• Added input 'hyprland/hyprland-qtutils/hyprlang':
+    follows 'hyprland/hyprlang'
+• Added input 'hyprland/hyprland-qtutils/hyprutils':
+    follows 'hyprland/hyprland-qtutils/hyprlang/hyprutils'
+• Added input 'hyprland/hyprland-qtutils/nixpkgs':
+    follows 'hyprland/nixpkgs'
+• Added input 'hyprland/hyprland-qtutils/systems':
+    follows 'hyprland/systems'
+• Added input 'hyprland/hyprlang':
+    'github:hyprwm/hyprlang/cee01452bca58d6cadb3224e21e370de8bc20f0b?narHash=sha256-/iuJ1paQOBoSLqHflRNNGyroqfF/yvPNurxzcCT0cAE%3D' (2025-06-19)
+• Added input 'hyprland/hyprlang/hyprutils':
+    follows 'hyprland/hyprutils'
+• Added input 'hyprland/hyprlang/nixpkgs':
+    follows 'hyprland/nixpkgs'
+• Added input 'hyprland/hyprlang/systems':
+    follows 'hyprland/systems'
+• Added input 'hyprland/hyprutils':
+    'github:hyprwm/hyprutils/bcabcbada90ed2aacb435dc09b91001819a6dc82?narHash=sha256-06i1pIh6wb%2BsDeDmWlzuPwIdaFMxLlj1J9I5B9XqSeo%3D' (2025-07-11)
+• Added input 'hyprland/hyprutils/nixpkgs':
+    follows 'hyprland/nixpkgs'
+• Added input 'hyprland/hyprutils/systems':
+    follows 'hyprland/systems'
+• Added input 'hyprland/hyprwayland-scanner':
+    'github:hyprwm/hyprwayland-scanner/fcca0c61f988a9d092cbb33e906775014c61579d?narHash=sha256-FnhBENxihITZldThvbO7883PdXC/2dzW4eiNvtoV5Ao%3D' (2025-07-07)
+• Added input 'hyprland/hyprwayland-scanner/nixpkgs':
+    follows 'hyprland/nixpkgs'
+• Added input 'hyprland/hyprwayland-scanner/systems':
+    follows 'hyprland/systems'
+• Added input 'hyprland/nixpkgs':
+    'github:NixOS/nixpkgs/6e987485eb2c77e5dcc5af4e3c70843711ef9251?narHash=sha256-RKwfXA4OZROjBTQAl9WOZQFm7L8Bo93FQwSJpAiSRvo%3D' (2025-07-16)
+• Added input 'hyprland/pre-commit-hooks':
+    'github:cachix/git-hooks.nix/16ec914f6fb6f599ce988427d9d94efddf25fe6d?narHash=sha256-wibppH3g/E2lxU43ZQHC5yA/7kIKLGxVEnsnVK1BtRg%3D' (2025-06-24)
+• Added input 'hyprland/pre-commit-hooks/flake-compat':
+    'github:edolstra/flake-compat/0f9255e01c2351cc7d116c072cb317785dd33b33?narHash=sha256-kvjfFW7WAETZlt09AgDn1MrtKzP7t90Vf7vypd3OL1U%3D' (2023-10-04)
+• Added input 'hyprland/pre-commit-hooks/gitignore':
+    'github:hercules-ci/gitignore.nix/637db329424fd7e46cf4185293b9cc8c88c95394?narHash=sha256-HG2cCnktfHsKV0s4XW83gU3F57gaTljL9KNSuG6bnQs%3D' (2024-02-28)
+• Added input 'hyprland/pre-commit-hooks/gitignore/nixpkgs':
+    follows 'hyprland/pre-commit-hooks/nixpkgs'
+• Added input 'hyprland/pre-commit-hooks/nixpkgs':
+    follows 'hyprland/nixpkgs'
+• Added input 'hyprland/systems':
+    'github:nix-systems/default-linux/31732fcf5e8fea42e59c2488ad31a0e651500f68?narHash=sha256-12tWmuL2zgBgZkdoB6qXZsgJEH9LR3oUgpaQq2RbI80%3D' (2023-07-14)
+• Added input 'hyprland/xdph':
+    'github:hyprwm/xdg-desktop-portal-hyprland/6115f3fdcb2c1a57b4a80a69f3c797e47607b90a?narHash=sha256-PFuv1TZVYvQhha0ac53E3YgdtmLShrN0t4T6xqHl0jE%3D' (2025-06-30)
+• Added input 'hyprland/xdph/hyprland-protocols':
+    follows 'hyprland/hyprland-protocols'
+• Added input 'hyprland/xdph/hyprlang':
+    follows 'hyprland/hyprlang'
+• Added input 'hyprland/xdph/hyprutils':
+    follows 'hyprland/hyprutils'
+• Added input 'hyprland/xdph/hyprwayland-scanner':
+    follows 'hyprland/hyprwayland-scanner'
+• Added input 'hyprland/xdph/nixpkgs':
+    follows 'hyprland/nixpkgs'
+• Added input 'hyprland/xdph/systems':
+    follows 'hyprland/systems'
+• Updated input 'nixpkgs':
+    'github:nixos/nixpkgs/c87b95e25065c028d31a94f06a62927d18763fdf?narHash=sha256-NS6BLD0lxOrnCiEOcvQCDVPXafX1/ek1dfJHX1nUIzc%3D' (2025-07-19)
+  → 'github:NixOS/nixpkgs/c87b95e25065c028d31a94f06a62927d18763fdf?narHash=sha256-NS6BLD0lxOrnCiEOcvQCDVPXafX1/ek1dfJHX1nUIzc%3D' (2025-07-19)
+warning: Git tree '/home/brian/.config/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/brian/.config/nixos' is dirty
-these 11 derivations will be built:
-  /nix/store/6daqw5xpgilga6g0qbazd3q11ds22mmm-system-path.drv
-  /nix/store/75q0fcqj9zv4zwl5ic4nlif0p7fn871v-dbus-1.drv
-  /nix/store/dw0q3vyk7b7nwsh9zpw6ys55mp1hbcd7-X-Restart-Triggers-dbus.drv
-  /nix/store/a9sv7jbsdpk25sj4gi0vlzqkbyknnily-unit-dbus.service.drv
-  /nix/store/z0n4v03ss0g1hh7n2rbap2b3vl7lfqzb-unit-dbus.service.drv
-  /nix/store/d1gg0f1vdr2azf1k680k2b8d7z19c5px-user-units.drv
-  /nix/store/psrr4mxxjbmx9kja2p6avrmhln901s3h-X-Restart-Triggers-polkit.drv
-  /nix/store/kzcvnjx7s3ddiczf38xnak23qqnrpb8g-unit-polkit.service.drv
-  /nix/store/icabn7w49ppzq5kb0lqcmpqqcbm9g26c-system-units.drv
-  /nix/store/ygx73ly727hrpflksxdybb5qgbdh1yc0-etc.drv
-  /nix/store/d52v5kkdk6h0bydr725hv6gdnahi6jif-nixos-system-nixos-25.11.20250719.c87b95e.drv
-building '/nix/store/6daqw5xpgilga6g0qbazd3q11ds22mmm-system-path.drv'...
-building '/nix/store/psrr4mxxjbmx9kja2p6avrmhln901s3h-X-Restart-Triggers-polkit.drv'...
-building '/nix/store/75q0fcqj9zv4zwl5ic4nlif0p7fn871v-dbus-1.drv'...
-building '/nix/store/kzcvnjx7s3ddiczf38xnak23qqnrpb8g-unit-polkit.service.drv'...
-building '/nix/store/dw0q3vyk7b7nwsh9zpw6ys55mp1hbcd7-X-Restart-Triggers-dbus.drv'...
-building '/nix/store/a9sv7jbsdpk25sj4gi0vlzqkbyknnily-unit-dbus.service.drv'...
-building '/nix/store/z0n4v03ss0g1hh7n2rbap2b3vl7lfqzb-unit-dbus.service.drv'...
-building '/nix/store/icabn7w49ppzq5kb0lqcmpqqcbm9g26c-system-units.drv'...
-building '/nix/store/d1gg0f1vdr2azf1k680k2b8d7z19c5px-user-units.drv'...
-building '/nix/store/ygx73ly727hrpflksxdybb5qgbdh1yc0-etc.drv'...
-building '/nix/store/d52v5kkdk6h0bydr725hv6gdnahi6jif-nixos-system-nixos-25.11.20250719.c87b95e.drv'...
+these 19 derivations will be built:
+  /nix/store/hf3a96dsqg401bw7218bcw66cm4kdnb8-init.lua.drv
+  /nix/store/y0j45y0b6hrx2rvxcv3v014lv7v9hyb2-init.lua.drv
+  /nix/store/9xax25dhycq0i60sc8f1q4q8dxwh2akj-mnw-configDir.drv
+  /nix/store/8a24zmd5pdkc3f8p8snn7hw8qyyvbm5x-mnw-0.11.3.drv
+  /nix/store/rj4y0bxlrp2krf3hfmmhg5y2k9hif6xm-nvf-init.lua.drv
+  /nix/store/hqnl6q0pw06wrj4ndnv6knzf0c3r5fh5-nvf-print-config.drv
+  /nix/store/p42fg2alsrw15cjp3pvir0j2sxfxwlir-nvf-print-config-path.drv
+  /nix/store/x2ssdv14d763bnzifqw1cj9h7nkvfbhg-nvf-with-helpers.drv
+  /nix/store/m3li7qd4hrz80mwpc3654l1igdgdnn0i-system-path.drv
+  /nix/store/2ngpa9hg6ps92pnhf939iwvw4pa1j8c1-dbus-1.drv
+  /nix/store/s6px9q181qm2xcv73a7wmmgiqavq3m3s-X-Restart-Triggers-polkit.drv
+  /nix/store/9xqprif9h2s2g1cj0i9l93zr364x3yql-unit-polkit.service.drv
+  /nix/store/cc4ijfib07aqkn69kg10kn0qanvix5bl-X-Restart-Triggers-dbus.drv
+  /nix/store/wqkl8177scndkqwvv1mvcmkrr159z3s5-unit-dbus.service.drv
+  /nix/store/q0pg5lkfpp4nmy7cvhfgw0rir1x2xcgf-system-units.drv
+  /nix/store/yq2jj8ysw2ayvm223rik37xh7x2w37ax-unit-dbus.service.drv
+  /nix/store/z71x190j8cdbkkdrg6sipm4jx1w2x72d-user-units.drv
+  /nix/store/6vm96z7kd4pk39djrdg8dni6q2zm57sd-etc.drv
+  /nix/store/jnjdas6n4mfk6rsdc0mz10xpg77dz49x-nixos-system-nixos-25.11.20250719.c87b95e.drv
+building '/nix/store/rj4y0bxlrp2krf3hfmmhg5y2k9hif6xm-nvf-init.lua.drv'...
+building '/nix/store/hf3a96dsqg401bw7218bcw66cm4kdnb8-init.lua.drv'...
+building '/nix/store/p42fg2alsrw15cjp3pvir0j2sxfxwlir-nvf-print-config-path.drv'...
+building '/nix/store/hqnl6q0pw06wrj4ndnv6knzf0c3r5fh5-nvf-print-config.drv'...
+building '/nix/store/y0j45y0b6hrx2rvxcv3v014lv7v9hyb2-init.lua.drv'...
+building '/nix/store/9xax25dhycq0i60sc8f1q4q8dxwh2akj-mnw-configDir.drv'...
+building '/nix/store/8a24zmd5pdkc3f8p8snn7hw8qyyvbm5x-mnw-0.11.3.drv'...
+building '/nix/store/x2ssdv14d763bnzifqw1cj9h7nkvfbhg-nvf-with-helpers.drv'...
+building '/nix/store/m3li7qd4hrz80mwpc3654l1igdgdnn0i-system-path.drv'...
+building '/nix/store/s6px9q181qm2xcv73a7wmmgiqavq3m3s-X-Restart-Triggers-polkit.drv'...
+building '/nix/store/2ngpa9hg6ps92pnhf939iwvw4pa1j8c1-dbus-1.drv'...
+building '/nix/store/9xqprif9h2s2g1cj0i9l93zr364x3yql-unit-polkit.service.drv'...
+building '/nix/store/cc4ijfib07aqkn69kg10kn0qanvix5bl-X-Restart-Triggers-dbus.drv'...
+building '/nix/store/wqkl8177scndkqwvv1mvcmkrr159z3s5-unit-dbus.service.drv'...
+building '/nix/store/yq2jj8ysw2ayvm223rik37xh7x2w37ax-unit-dbus.service.drv'...
+building '/nix/store/q0pg5lkfpp4nmy7cvhfgw0rir1x2xcgf-system-units.drv'...
+building '/nix/store/z71x190j8cdbkkdrg6sipm4jx1w2x72d-user-units.drv'...
+building '/nix/store/6vm96z7kd4pk39djrdg8dni6q2zm57sd-etc.drv'...
+building '/nix/store/jnjdas6n4mfk6rsdc0mz10xpg77dz49x-nixos-system-nixos-25.11.20250719.c87b95e.drv'...
 activating the configuration...
 setting up /etc...
 reloading user units for brian...
@@ -31,4 +154,4 @@ restarting sysinit-reactivation.target
 reloading the following units: dbus.service
 restarting the following units: polkit.service
 the following new units were started: NetworkManager-dispatcher.service
-Done. The new configuration is /nix/store/csn3vvz26d5qyzh696bzcadf48wzs2vv-nixos-system-nixos-25.11.20250719.c87b95e
+Done. The new configuration is /nix/store/7sf6rbr89wb983f0l9xn7im9fx5vj53j-nixos-system-nixos-25.11.20250719.c87b95e

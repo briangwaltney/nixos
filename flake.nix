@@ -2,7 +2,7 @@
   description = "Nixos config flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -13,18 +13,22 @@
       url = "github:NotAShelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    hyprland.url = "github:hyprwm/Hyprland";
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
+    hyprland,
     nvf,
     ...
   } @ inputs: let
     system = "x86_64-linux";
+    lib = nixpkgs.lib;
   in {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.nixos = lib.nixosSystem {
       inherit system;
       specialArgs = {inherit inputs;};
       modules = [
@@ -38,7 +42,6 @@
       modules = [
         ./home.nix
         ./shell-config.nix
-        ./nvim.nix
       ];
     };
   };
