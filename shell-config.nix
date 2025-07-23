@@ -52,7 +52,8 @@
     shellAliases = let
       flakePath = "~/.config/nixos";
     in {
-      air = "~/go/bin/air -c .air.toml";
+      # air = "~/go/bin/air -c .air.toml";
+      ll = "ls -l";
       rebuild = "~/.config/rebuild.sh";
       hms = "home-manager switch --flake ${flakePath}";
       v = "nvim";

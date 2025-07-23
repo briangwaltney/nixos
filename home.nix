@@ -12,7 +12,9 @@
 
     packages = with pkgs; [];
 
-    file = {};
+    file = {
+      "~/.config/hypr/hyprland.conf".source = ./hyprland.conf;
+    };
 
     sessionVariables = {
       EDITOR = "neovim";
