@@ -4,6 +4,9 @@
   pkgs,
   ...
 }: {
+  imports = [
+    ./sh.nix
+  ];
   home = {
     username = "brian";
     homeDirectory = "/home/brian/";
@@ -13,7 +16,7 @@
     packages = with pkgs; [];
 
     file = {
-      "~/.config/hypr/hyprland.conf".source = ./hyprland.conf;
+      ".config/hypr/hyprland.conf".source = ./hyprland.conf;
     };
 
     sessionVariables = {

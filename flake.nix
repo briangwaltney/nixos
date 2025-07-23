@@ -36,7 +36,6 @@
       inherit pkgs;
       modules = [
         ./home.nix
-        ./shell-config.nix
       ];
     };
   };

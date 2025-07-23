@@ -4,8 +4,12 @@
   pkgs,
   ...
 }: {
-  programs.zoxide.enable = true;
-  programs.zoxide.enableZshIntegration = true;
+  programs = {
+    zoxide = {
+      enable = true;
+      enableZshIntegration = true;
+    };
+  };
 
   programs.starship = {
     enable = true;
