@@ -9,11 +9,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvf = {
-      url = "github:NotAShelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     hyprland.url = "github:hyprwm/Hyprland";
   };
 
@@ -22,23 +17,23 @@
     nixpkgs,
     home-manager,
     hyprland,
-    nvf,
     ...
   } @ inputs: let
     system = "x86_64-linux";
     lib = nixpkgs.lib;
+    pkgs = nixpkgs.legacyPackages.${system};
   in {
     nixosConfigurations.nixos = lib.nixosSystem {
       inherit system;
       specialArgs = {inherit inputs;};
       modules = [
-        nvf.nixosModules.default
+        # nvf.nixosModules.default
         ./configuration.nix
       ];
     };
 
     homeConfigurations.brian = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
+      inherit pkgs;
       modules = [
         ./home.nix
         ./shell-config.nix
