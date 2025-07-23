@@ -8,15 +8,14 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    hyprland.url = "github:hyprwm/Hyprland";
+    nvf.url = "github:notashelf/nvf";
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
-    hyprland,
+    nvf,
     ...
   } @ inputs: let
     system = "x86_64-linux";

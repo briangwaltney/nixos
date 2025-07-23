@@ -1,4 +1,75 @@
 warning: Git tree '/home/brian/.config/nixos' is dirty
+unpacking 'github:notashelf/nvf/8fbecab446afe3454ecce6a4b817ec4f123a4a34' into the Git cache...
+warning: updating lock file '"/home/brian/.config/nixos/flake.lock"':
+• Removed input 'hyprland'
+• Removed input 'hyprland/aquamarine'
+• Removed input 'hyprland/aquamarine/hyprutils'
+• Removed input 'hyprland/aquamarine/hyprwayland-scanner'
+• Removed input 'hyprland/aquamarine/nixpkgs'
+• Removed input 'hyprland/aquamarine/systems'
+• Removed input 'hyprland/hyprcursor'
+• Removed input 'hyprland/hyprcursor/hyprlang'
+• Removed input 'hyprland/hyprcursor/nixpkgs'
+• Removed input 'hyprland/hyprcursor/systems'
+• Removed input 'hyprland/hyprgraphics'
+• Removed input 'hyprland/hyprgraphics/hyprutils'
+• Removed input 'hyprland/hyprgraphics/nixpkgs'
+• Removed input 'hyprland/hyprgraphics/systems'
+• Removed input 'hyprland/hyprland-protocols'
+• Removed input 'hyprland/hyprland-protocols/nixpkgs'
+• Removed input 'hyprland/hyprland-protocols/systems'
+• Removed input 'hyprland/hyprland-qtutils'
+• Removed input 'hyprland/hyprland-qtutils/hyprland-qt-support'
+• Removed input 'hyprland/hyprland-qtutils/hyprland-qt-support/hyprlang'
+• Removed input 'hyprland/hyprland-qtutils/hyprland-qt-support/nixpkgs'
+• Removed input 'hyprland/hyprland-qtutils/hyprland-qt-support/systems'
+• Removed input 'hyprland/hyprland-qtutils/hyprlang'
+• Removed input 'hyprland/hyprland-qtutils/hyprutils'
+• Removed input 'hyprland/hyprland-qtutils/nixpkgs'
+• Removed input 'hyprland/hyprland-qtutils/systems'
+• Removed input 'hyprland/hyprlang'
+• Removed input 'hyprland/hyprlang/hyprutils'
+• Removed input 'hyprland/hyprlang/nixpkgs'
+• Removed input 'hyprland/hyprlang/systems'
+• Removed input 'hyprland/hyprutils'
+• Removed input 'hyprland/hyprutils/nixpkgs'
+• Removed input 'hyprland/hyprutils/systems'
+• Removed input 'hyprland/hyprwayland-scanner'
+• Removed input 'hyprland/hyprwayland-scanner/nixpkgs'
+• Removed input 'hyprland/hyprwayland-scanner/systems'
+• Removed input 'hyprland/nixpkgs'
+• Removed input 'hyprland/pre-commit-hooks'
+• Removed input 'hyprland/pre-commit-hooks/flake-compat'
+• Removed input 'hyprland/pre-commit-hooks/gitignore'
+• Removed input 'hyprland/pre-commit-hooks/gitignore/nixpkgs'
+• Removed input 'hyprland/pre-commit-hooks/nixpkgs'
+• Removed input 'hyprland/systems'
+• Removed input 'hyprland/xdph'
+• Removed input 'hyprland/xdph/hyprland-protocols'
+• Removed input 'hyprland/xdph/hyprlang'
+• Removed input 'hyprland/xdph/hyprutils'
+• Removed input 'hyprland/xdph/hyprwayland-scanner'
+• Removed input 'hyprland/xdph/nixpkgs'
+• Removed input 'hyprland/xdph/systems'
+• Added input 'nvf':
+    'github:notashelf/nvf/8fbecab446afe3454ecce6a4b817ec4f123a4a34?narHash=sha256-daKfPQnipcRnKnXknDzv%2BfzNKeEY3r/10y8YMVQ10vU%3D' (2025-07-22)
+• Added input 'nvf/flake-compat':
+    'git+https://git.lix.systems/lix-project/flake-compat.git?ref=refs/heads/main&rev=549f2762aebeff29a2e5ece7a7dc0f955281a1d1' (2025-07-05)
+• Added input 'nvf/flake-parts':
+    'github:hercules-ci/flake-parts/644e0fc48951a860279da645ba77fe4a6e814c5e?narHash=sha256-TVcTNvOeWWk1DXljFxVRp%2BE0tzG1LhrVjOGGoMHuXio%3D' (2025-07-21)
+• Added input 'nvf/flake-parts/nixpkgs-lib':
+    follows 'nvf/nixpkgs'
+• Added input 'nvf/flake-utils':
+    'github:numtide/flake-utils/11707dc2f618dd54ca8739b309ec4fc024de578b?narHash=sha256-l0KFg5HjrsfsO/JpG%2Br7fRrqm12kzFHyUHqHCVpMMbI%3D' (2024-11-13)
+• Added input 'nvf/flake-utils/systems':
+    follows 'nvf/systems'
+• Added input 'nvf/mnw':
+    'github:Gerg-L/mnw/cff958a4e050f8d917a6ff3a5624bc4681c6187d?narHash=sha256-eZu2yH3Y2eA9DD3naKWy/sTxYS5rPK2hO7vj8tvUCSU%3D' (2025-05-31)
+• Added input 'nvf/nixpkgs':
+    'github:nixos/nixpkgs/7c688a0875df5a8c28a53fb55ae45e94eae0dddb?narHash=sha256-vtTM4oDke3SeDj%2B1ey6DjmzXdq8ZZSCLWSaApADDvIE%3D' (2025-07-20)
+• Added input 'nvf/systems':
+    'github:nix-systems/default/da67096a3b9bf56a91d16901293e51ba5b49a27e?narHash=sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768%3D' (2023-04-09)
+warning: Git tree '/home/brian/.config/nixos' is dirty
 error:
        … while calling the 'seq' builtin
          at /nix/store/182c2qj20sfspzxcshd6p051qdx3mx5j-source/lib/modules.nix:360:18:
@@ -7,21 +78,16 @@ error:
              |                  ^
           361|         _module = checked (config._module);
 
-       … while calling the 'throw' builtin
-         at /nix/store/182c2qj20sfspzxcshd6p051qdx3mx5j-source/lib/modules.nix:332:13:
-          331|           else
-          332|             throw baseMsg
-             |             ^
-          333|         else
+       … while evaluating a branch condition
+         at /nix/store/182c2qj20sfspzxcshd6p051qdx3mx5j-source/lib/modules.nix:296:9:
+          295|       checkUnmatched =
+          296|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [ ] then
+             |         ^
+          297|           let
 
-       error: The option `programs.nvf' does not exist. Definition values:
-       - In `/nix/store/39vsqxx68s3dalzwrphn0y88l4xf7l5s-source/configuration.nix':
-           {
-             defaultEditor = true;
-             enable = true;
-             settings = {
-               vim = {
-           ...
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: path '/nix/store/02hyz62zfadcjf7gsni6vqv8iwk8x0wx-source/nvf.nix' does not exist
 warning: could not build a newer version of nixos-rebuild, using current version
 building the system configuration...
 warning: Git tree '/home/brian/.config/nixos' is dirty
@@ -33,19 +99,14 @@ error:
              |                  ^
           361|         _module = checked (config._module);
 
-       … while calling the 'throw' builtin
-         at /nix/store/182c2qj20sfspzxcshd6p051qdx3mx5j-source/lib/modules.nix:332:13:
-          331|           else
-          332|             throw baseMsg
-             |             ^
-          333|         else
+       … while evaluating a branch condition
+         at /nix/store/182c2qj20sfspzxcshd6p051qdx3mx5j-source/lib/modules.nix:296:9:
+          295|       checkUnmatched =
+          296|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [ ] then
+             |         ^
+          297|           let
 
-       error: The option `programs.nvf' does not exist. Definition values:
-       - In `/nix/store/47kmz9bf7cp95ykdm9lvkw9ksypyzczb-source/configuration.nix':
-           {
-             defaultEditor = true;
-             enable = true;
-             settings = {
-               vim = {
-           ...
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: path '/nix/store/ygd4k9vkx9v7d666qvn5dh6d3hz5wj8f-source/nvf.nix' does not exist
 Command 'nix --extra-experimental-features 'nix-command flakes' build --print-out-paths '/home/brian/.config/nixos#nixosConfigurations."nixos".config.system.build.toplevel' --no-link' returned non-zero exit status 1.
