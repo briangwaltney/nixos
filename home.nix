@@ -17,6 +17,7 @@
 
     file = {
       ".config/hypr/hyprland.conf".source = ./hyprland.conf;
+      ".config/nvim".source = ./nvim;
     };
 
     sessionVariables = {
