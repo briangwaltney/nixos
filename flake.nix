@@ -8,7 +8,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nvf.url = "github:notashelf/nvf";
+    nvf = {
+      url = "github:notashelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -26,7 +29,7 @@
       inherit system;
       specialArgs = {inherit inputs;};
       modules = [
-        # nvf.nixosModules.default
+        nvf.nixosModules.default
         ./configuration.nix
       ];
     };

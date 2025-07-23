@@ -1,112 +1,58 @@
 warning: Git tree '/home/brian/.config/nixos' is dirty
-unpacking 'github:notashelf/nvf/8fbecab446afe3454ecce6a4b817ec4f123a4a34' into the Git cache...
 warning: updating lock file '"/home/brian/.config/nixos/flake.lock"':
-• Removed input 'hyprland'
-• Removed input 'hyprland/aquamarine'
-• Removed input 'hyprland/aquamarine/hyprutils'
-• Removed input 'hyprland/aquamarine/hyprwayland-scanner'
-• Removed input 'hyprland/aquamarine/nixpkgs'
-• Removed input 'hyprland/aquamarine/systems'
-• Removed input 'hyprland/hyprcursor'
-• Removed input 'hyprland/hyprcursor/hyprlang'
-• Removed input 'hyprland/hyprcursor/nixpkgs'
-• Removed input 'hyprland/hyprcursor/systems'
-• Removed input 'hyprland/hyprgraphics'
-• Removed input 'hyprland/hyprgraphics/hyprutils'
-• Removed input 'hyprland/hyprgraphics/nixpkgs'
-• Removed input 'hyprland/hyprgraphics/systems'
-• Removed input 'hyprland/hyprland-protocols'
-• Removed input 'hyprland/hyprland-protocols/nixpkgs'
-• Removed input 'hyprland/hyprland-protocols/systems'
-• Removed input 'hyprland/hyprland-qtutils'
-• Removed input 'hyprland/hyprland-qtutils/hyprland-qt-support'
-• Removed input 'hyprland/hyprland-qtutils/hyprland-qt-support/hyprlang'
-• Removed input 'hyprland/hyprland-qtutils/hyprland-qt-support/nixpkgs'
-• Removed input 'hyprland/hyprland-qtutils/hyprland-qt-support/systems'
-• Removed input 'hyprland/hyprland-qtutils/hyprlang'
-• Removed input 'hyprland/hyprland-qtutils/hyprutils'
-• Removed input 'hyprland/hyprland-qtutils/nixpkgs'
-• Removed input 'hyprland/hyprland-qtutils/systems'
-• Removed input 'hyprland/hyprlang'
-• Removed input 'hyprland/hyprlang/hyprutils'
-• Removed input 'hyprland/hyprlang/nixpkgs'
-• Removed input 'hyprland/hyprlang/systems'
-• Removed input 'hyprland/hyprutils'
-• Removed input 'hyprland/hyprutils/nixpkgs'
-• Removed input 'hyprland/hyprutils/systems'
-• Removed input 'hyprland/hyprwayland-scanner'
-• Removed input 'hyprland/hyprwayland-scanner/nixpkgs'
-• Removed input 'hyprland/hyprwayland-scanner/systems'
-• Removed input 'hyprland/nixpkgs'
-• Removed input 'hyprland/pre-commit-hooks'
-• Removed input 'hyprland/pre-commit-hooks/flake-compat'
-• Removed input 'hyprland/pre-commit-hooks/gitignore'
-• Removed input 'hyprland/pre-commit-hooks/gitignore/nixpkgs'
-• Removed input 'hyprland/pre-commit-hooks/nixpkgs'
-• Removed input 'hyprland/systems'
-• Removed input 'hyprland/xdph'
-• Removed input 'hyprland/xdph/hyprland-protocols'
-• Removed input 'hyprland/xdph/hyprlang'
-• Removed input 'hyprland/xdph/hyprutils'
-• Removed input 'hyprland/xdph/hyprwayland-scanner'
-• Removed input 'hyprland/xdph/nixpkgs'
-• Removed input 'hyprland/xdph/systems'
-• Added input 'nvf':
-    'github:notashelf/nvf/8fbecab446afe3454ecce6a4b817ec4f123a4a34?narHash=sha256-daKfPQnipcRnKnXknDzv%2BfzNKeEY3r/10y8YMVQ10vU%3D' (2025-07-22)
-• Added input 'nvf/flake-compat':
-    'git+https://git.lix.systems/lix-project/flake-compat.git?ref=refs/heads/main&rev=549f2762aebeff29a2e5ece7a7dc0f955281a1d1' (2025-07-05)
-• Added input 'nvf/flake-parts':
-    'github:hercules-ci/flake-parts/644e0fc48951a860279da645ba77fe4a6e814c5e?narHash=sha256-TVcTNvOeWWk1DXljFxVRp%2BE0tzG1LhrVjOGGoMHuXio%3D' (2025-07-21)
-• Added input 'nvf/flake-parts/nixpkgs-lib':
-    follows 'nvf/nixpkgs'
-• Added input 'nvf/flake-utils':
-    'github:numtide/flake-utils/11707dc2f618dd54ca8739b309ec4fc024de578b?narHash=sha256-l0KFg5HjrsfsO/JpG%2Br7fRrqm12kzFHyUHqHCVpMMbI%3D' (2024-11-13)
-• Added input 'nvf/flake-utils/systems':
-    follows 'nvf/systems'
-• Added input 'nvf/mnw':
-    'github:Gerg-L/mnw/cff958a4e050f8d917a6ff3a5624bc4681c6187d?narHash=sha256-eZu2yH3Y2eA9DD3naKWy/sTxYS5rPK2hO7vj8tvUCSU%3D' (2025-05-31)
-• Added input 'nvf/nixpkgs':
+• Updated input 'nvf/nixpkgs':
     'github:nixos/nixpkgs/7c688a0875df5a8c28a53fb55ae45e94eae0dddb?narHash=sha256-vtTM4oDke3SeDj%2B1ey6DjmzXdq8ZZSCLWSaApADDvIE%3D' (2025-07-20)
-• Added input 'nvf/systems':
-    'github:nix-systems/default/da67096a3b9bf56a91d16901293e51ba5b49a27e?narHash=sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768%3D' (2023-04-09)
+  → follows 'nixpkgs'
 warning: Git tree '/home/brian/.config/nixos' is dirty
-error:
-       … while calling the 'seq' builtin
-         at /nix/store/182c2qj20sfspzxcshd6p051qdx3mx5j-source/lib/modules.nix:360:18:
-          359|         options = checked options;
-          360|         config = checked (removeAttrs config [ "_module" ]);
-             |                  ^
-          361|         _module = checked (config._module);
-
-       … while evaluating a branch condition
-         at /nix/store/182c2qj20sfspzxcshd6p051qdx3mx5j-source/lib/modules.nix:296:9:
-          295|       checkUnmatched =
-          296|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [ ] then
-             |         ^
-          297|           let
-
-       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
-
-       error: path '/nix/store/02hyz62zfadcjf7gsni6vqv8iwk8x0wx-source/nvf.nix' does not exist
-warning: could not build a newer version of nixos-rebuild, using current version
+unpacking 'github:hercules-ci/flake-parts/644e0fc48951a860279da645ba77fe4a6e814c5e?narHash=sha256-TVcTNvOeWWk1DXljFxVRp%2BE0tzG1LhrVjOGGoMHuXio%3D' into the Git cache...
 building the system configuration...
 warning: Git tree '/home/brian/.config/nixos' is dirty
-error:
-       … while calling the 'seq' builtin
-         at /nix/store/182c2qj20sfspzxcshd6p051qdx3mx5j-source/lib/modules.nix:360:18:
-          359|         options = checked options;
-          360|         config = checked (removeAttrs config [ "_module" ]);
-             |                  ^
-          361|         _module = checked (config._module);
-
-       … while evaluating a branch condition
-         at /nix/store/182c2qj20sfspzxcshd6p051qdx3mx5j-source/lib/modules.nix:296:9:
-          295|       checkUnmatched =
-          296|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [ ] then
-             |         ^
-          297|           let
-
-       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
-
-       error: path '/nix/store/ygd4k9vkx9v7d666qvn5dh6d3hz5wj8f-source/nvf.nix' does not exist
-Command 'nix --extra-experimental-features 'nix-command flakes' build --print-out-paths '/home/brian/.config/nixos#nixosConfigurations."nixos".config.system.build.toplevel' --no-link' returned non-zero exit status 1.
+these 20 derivations will be built:
+  /nix/store/bww3kg1d7zhsl44ny48lai1zpxrfls2f-nvf-init.lua.drv
+  /nix/store/439qxciw9yz6h6wwrcajldgd6kg7rnl8-nvf-print-config.drv
+  /nix/store/kvbgivcfya90vmwm555ix51d2k17n5iv-init.lua.drv
+  /nix/store/56qdixnls17qr5pkq9qs0n5l763yj57d-init.lua.drv
+  /nix/store/fnlyg3yczazm6bnfi2pmkcax136i5r2m-undotree-28f2f54a.drv
+  /nix/store/paa40grwwiknkinp4hm11f13n9a0yv3j-mnw-configDir.drv
+  /nix/store/6rlr72md48vp4i1i6r6cf51v0c1mqs51-mnw-0.11.3.drv
+  /nix/store/jgbwl1jlrz9xsjbw1m83x2nv51q0xwyk-nvf-print-config-path.drv
+  /nix/store/w30417x7y45nw2gqr88l0wraaap8hxsg-nvf-with-helpers.drv
+  /nix/store/shvz872hbh8iv4cq39rxlph9n6vhkcnq-system-path.drv
+  /nix/store/vbday6ljzcwmv5q0nzx5sxrsp5sbgism-dbus-1.drv
+  /nix/store/w8pgx0lb1a7mliyzks7i9cqad0apd0v7-X-Restart-Triggers-dbus.drv
+  /nix/store/m1dv0kak7lm0gssd1vl4337h1nsdibdk-unit-dbus.service.drv
+  /nix/store/0v870d3cxsplnl83k6k2gw5x58qfivln-user-units.drv
+  /nix/store/dk0fpqhh94hyw4p0m2d4wx00b45lb5mz-unit-dbus.service.drv
+  /nix/store/l7s1jc2jhid09p8z8blp8ncraspchl3f-X-Restart-Triggers-polkit.drv
+  /nix/store/ij5v6hksg7rj32jlzy7v7v9ahapmkmxa-unit-polkit.service.drv
+  /nix/store/yaj7h8c2qcjlibf2ivck0px03ki94g3m-system-units.drv
+  /nix/store/nd16y7xz6zlpr8ch83ldv2ds85b3hg79-etc.drv
+  /nix/store/xrxawlhrflmfgfwhpxi9ha94ixr2va4k-nixos-system-nixos-25.11.20250719.c87b95e.drv
+building '/nix/store/bww3kg1d7zhsl44ny48lai1zpxrfls2f-nvf-init.lua.drv'...
+building '/nix/store/kvbgivcfya90vmwm555ix51d2k17n5iv-init.lua.drv'...
+building '/nix/store/fnlyg3yczazm6bnfi2pmkcax136i5r2m-undotree-28f2f54a.drv'...
+building '/nix/store/56qdixnls17qr5pkq9qs0n5l763yj57d-init.lua.drv'...
+building '/nix/store/jgbwl1jlrz9xsjbw1m83x2nv51q0xwyk-nvf-print-config-path.drv'...
+building '/nix/store/439qxciw9yz6h6wwrcajldgd6kg7rnl8-nvf-print-config.drv'...
+building '/nix/store/paa40grwwiknkinp4hm11f13n9a0yv3j-mnw-configDir.drv'...
+building '/nix/store/6rlr72md48vp4i1i6r6cf51v0c1mqs51-mnw-0.11.3.drv'...
+building '/nix/store/w30417x7y45nw2gqr88l0wraaap8hxsg-nvf-with-helpers.drv'...
+building '/nix/store/shvz872hbh8iv4cq39rxlph9n6vhkcnq-system-path.drv'...
+building '/nix/store/l7s1jc2jhid09p8z8blp8ncraspchl3f-X-Restart-Triggers-polkit.drv'...
+building '/nix/store/vbday6ljzcwmv5q0nzx5sxrsp5sbgism-dbus-1.drv'...
+building '/nix/store/ij5v6hksg7rj32jlzy7v7v9ahapmkmxa-unit-polkit.service.drv'...
+building '/nix/store/w8pgx0lb1a7mliyzks7i9cqad0apd0v7-X-Restart-Triggers-dbus.drv'...
+building '/nix/store/dk0fpqhh94hyw4p0m2d4wx00b45lb5mz-unit-dbus.service.drv'...
+building '/nix/store/m1dv0kak7lm0gssd1vl4337h1nsdibdk-unit-dbus.service.drv'...
+building '/nix/store/yaj7h8c2qcjlibf2ivck0px03ki94g3m-system-units.drv'...
+building '/nix/store/0v870d3cxsplnl83k6k2gw5x58qfivln-user-units.drv'...
+building '/nix/store/nd16y7xz6zlpr8ch83ldv2ds85b3hg79-etc.drv'...
+building '/nix/store/xrxawlhrflmfgfwhpxi9ha94ixr2va4k-nixos-system-nixos-25.11.20250719.c87b95e.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for brian...
+restarting sysinit-reactivation.target
+reloading the following units: dbus.service
+restarting the following units: polkit.service
+the following new units were started: NetworkManager-dispatcher.service, sysinit-reactivation.target, systemd-tmpfiles-resetup.service
+Done. The new configuration is /nix/store/lj3k8k7d933y98zjnpkbabw8pmdgnr3z-nixos-system-nixos-25.11.20250719.c87b95e
