@@ -47,8 +47,8 @@
       };
       theme = {
         enable = true;
-        name = "catppuccin";
-        style = "mocha";
+        name = "nord";
+        # style = "mocha";
       };
       autopairs.nvim-autopairs.enable = true;
       autocomplete = {
