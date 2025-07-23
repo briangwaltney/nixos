@@ -47,8 +47,27 @@
       };
       theme = {
         enable = true;
-        name = "nord";
+        name = "base16";
+        # name = "nord";
         # style = "mocha";
+        base16-colors = {
+          base00 = "#252a34";
+          base01 = "#3B4252";
+          base02 = "#2b364e";
+          base03 = "#4C566A";
+          base04 = "#D8DEE9";
+          base05 = "#E5E9F0";
+          base06 = "#ECEFF4";
+          base07 = "#8FBCBB";
+          base08 = "#88C0D0";
+          base09 = "#fca5a5";
+          base0A = "#88C0D0";
+          base0B = "#d9f99d";
+          base0C = "#81A1C1";
+          base0D = "#38bdf8";
+          base0E = "#fdba74";
+          base0F = "#fca5a5";
+        };
       };
       autopairs.nvim-autopairs.enable = true;
       autocomplete = {
